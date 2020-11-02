@@ -1,0 +1,10 @@
+*.iml
+.idea/
+.DS_Store
+
+target/
+
+hello_world/main
+hello_world/main.exe
+
+local.txt
