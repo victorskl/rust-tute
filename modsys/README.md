@@ -80,4 +80,4 @@ use std::io::Result as IoResult;
 // Use glob operator `*` to bring in all!
 use std::collections::*;
 ```
-- Using a semicolon after `mod some_module` rather than using a block tells Rust to load the contents of the module from another file with the same name as the module.
+- Using a semicolon after `mod some_module` rather than using a block tells Rust to load the contents of the [module from another file](https://doc.rust-lang.org/book/ch07-05-separating-modules-into-different-files.html) with the same name as the module.

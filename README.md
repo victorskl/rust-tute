@@ -50,11 +50,12 @@ tree -L 2 target
 ```
 
 - Recap:
-    - [program entrypoint](https://en.wikipedia.org/wiki/Entry_point#Rust) is a function named `main()`, typically in `main.rs` or `lib.rs`
+    - The [program entrypoint](https://en.wikipedia.org/wiki/Entry_point#Rust) is a function named `main()`, typically in `main.rs`
     - `rustup` -- the Rust installer and version management tool
     - `cargo` -- the Rust build tool and package manager
     - `Cargo.toml` -- Cargo config that use [toml format](https://en.wikipedia.org/wiki/TOML)
     - `Cargo.lock` -- [git ignored for libraries, git tracked for binaries](https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html)
     - Cargo prescribe [a convention for project layout](https://doc.rust-lang.org/cargo/guide/project-layout.html) -- _much resemble to Maven_
     - https://crates.io -- the Rust package registry
+    - `cargo doc --open` -- generate documentation including dependencies
     - Also note about [Rust underscore vs hyphen](https://www.google.com/search?q=rust+underscore+vs+hyphen) -- _similar to [Python import hyphen](https://www.google.com/search?q=python+import+hyphen)_ -- a Rust module import/include valid identifier is **underscore** i.e. `use foo_module::bar_func`
