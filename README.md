@@ -49,13 +49,33 @@ tree -L 2 target
 ./target/release/hello-rust
 ```
 
-- Recap:
-    - The [program entrypoint](https://en.wikipedia.org/wiki/Entry_point#Rust) is a function named `main()`, typically in `main.rs`
-    - `rustup` -- the Rust installer and version management tool
-    - `cargo` -- the Rust build tool and package manager
-    - `Cargo.toml` -- Cargo config that use [toml format](https://en.wikipedia.org/wiki/TOML)
-    - `Cargo.lock` -- [git ignored for libraries, git tracked for binaries](https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html)
-    - Cargo prescribe [a convention for project layout](https://doc.rust-lang.org/cargo/guide/project-layout.html) -- _much resemble to Maven_
-    - https://crates.io -- the Rust package registry
-    - `cargo doc --open` -- generate documentation including dependencies
-    - Also note about [Rust underscore vs hyphen](https://www.google.com/search?q=rust+underscore+vs+hyphen) -- _similar to [Python import hyphen](https://www.google.com/search?q=python+import+hyphen)_ -- a Rust module import/include valid identifier is **underscore** i.e. `use foo_module::bar_func`
+### Recap
+- The [program entrypoint](https://en.wikipedia.org/wiki/Entry_point#Rust) is a function named `main()`, typically in `main.rs`
+- `rustup` -- the Rust installer and version management tool
+- `cargo` -- the Rust build tool and package manager
+- `Cargo.toml` -- Cargo config that use [toml format](https://en.wikipedia.org/wiki/TOML)
+- `Cargo.lock` -- [git ignored for libraries, git tracked for binaries](https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html)
+- Cargo prescribe [a convention for project layout](https://doc.rust-lang.org/cargo/guide/project-layout.html) -- _much resemble to Maven_
+- https://crates.io -- the Rust package registry
+- `cargo doc --open` -- generate documentation including dependencies
+- Also note about [Rust underscore vs hyphen](https://www.google.com/search?q=rust+underscore+vs+hyphen) -- _similar to [Python import hyphen](https://www.google.com/search?q=python+import+hyphen)_ -- a Rust module import/include valid identifier is **underscore** i.e. `use foo_module::bar_func`
+
+### REF
+- [Cargo Book](https://doc.rust-lang.org/cargo/index.html)
+- [Rust Book](https://doc.rust-lang.org/stable/book/)    
+- [Rust Learn](https://www.rust-lang.org/learn)
+
+### Using tool written in Rust
+
+Just like others, such as `yarn global add <foo>` or `npm -g install <bar>` for some tool written in NodeJS eco-system; or `pip install <foo>` or `pipx install <bar>` for Python; etc... we can use Cargo install of some tools written in Rust.
+
+```shell script
+cargo install --help
+cargo help install
+
+# e.g. WebSocket cli client
+cargo search websocat
+cargo install websocat
+which websocat
+websocat --help
+```
