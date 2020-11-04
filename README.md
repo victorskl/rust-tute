@@ -67,7 +67,7 @@ tree -L 2 target
 
 ### Using tool written in Rust
 
-Just like others, such as `yarn global add <foo>` or `npm -g install <bar>` for some tool written in NodeJS eco-system; or `pip install <foo>` or `pipx install <bar>` for Python; etc... we can use Cargo install of some tools written in Rust.
+Just like others, such as `yarn global add <foo>` or `npm -g install <bar>` for some tool written in NodeJS eco-system; or `pip install <foo>` or `pipx install <bar>` for Python; or `go get github.com/some/xtool` for Go; etc... we can use Cargo install for some tool that is written in Rust.
 
 ```shell script
 cargo install --help

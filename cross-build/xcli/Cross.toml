@@ -1,0 +1,6 @@
+[build.env]
+passthrough = [
+    "RUST_DEBUG",
+]
+
+# More https://github.com/rust-embedded/cross#configuration
