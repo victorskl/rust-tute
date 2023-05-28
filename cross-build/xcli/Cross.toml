@@ -3,4 +3,4 @@ passthrough = [
     "RUST_DEBUG",
 ]
 
-# More https://github.com/rust-embedded/cross#configuration
+# More https://github.com/cross-rs/cross#configuration

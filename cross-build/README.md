@@ -5,6 +5,7 @@ https://github.com/rust-embedded/cross
 > **TL;DR** Rust is like C/C++ which need to be compiled for the target platform. The `cross` approach is just building Rust binary inside Docker container for the target cross platform/s. 
 
 ```
+cargo search cross
 cargo install cross
 which cross
 cross --help

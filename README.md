@@ -60,11 +60,6 @@ tree -L 2 target
 - `cargo doc --open` -- generate documentation including dependencies
 - Also note about [Rust underscore vs hyphen](https://www.google.com/search?q=rust+underscore+vs+hyphen) -- _similar to [Python import hyphen](https://www.google.com/search?q=python+import+hyphen)_ -- a Rust module import/include valid identifier is **underscore** i.e. `use foo_module::bar_func`
 
-### REF
-- [Cargo Book](https://doc.rust-lang.org/cargo/index.html)
-- [Rust Book](https://doc.rust-lang.org/stable/book/)    
-- [Rust Learn](https://www.rust-lang.org/learn)
-
 ### Using tool written in Rust
 
 Just like others, such as `yarn global add <foo>` or `npm -g install <bar>` for some tool written in NodeJS eco-system; or `pip install <foo>` or `pipx install <bar>` for Python; or `go get github.com/some/xtool` for Go; etc... we can use Cargo install for some tool that is written in Rust.
@@ -79,3 +74,17 @@ cargo install websocat
 which websocat
 websocat --help
 ```
+
+### Next
+
+- [modsys](modsys) -- code organization and module system
+- [primer](primer) -- language basic
+- [testing](testing) -- code testing
+- [cross-build](cross-build) -- building for different platforms
+- [guessing_game](guessing_game) -- example app
+
+## REF
+
+- [Cargo Book](https://doc.rust-lang.org/cargo/index.html)
+- [Rust Book](https://doc.rust-lang.org/stable/book/)
+- [Rust Learn](https://www.rust-lang.org/learn)

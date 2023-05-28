@@ -4,7 +4,7 @@ pub mod hosting {
     fn seat_at_table() {}
 }
 */
-// and, we can further split it by creating `front_of_house` folder and corresponding file `hosting.fs`
+// and, we can further split it by creating `front_of_house` folder and corresponding file `hosting.rs`
 pub mod hosting;
 
 mod serving {
