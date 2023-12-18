@@ -1,4 +1,3 @@
-use std::path::Path;
 use crate::print_break_line;
 
 pub fn explorer() {
@@ -13,8 +12,6 @@ pub fn explorer() {
 
     vector_explorer();
     print_break_line(32);
-
-    path_finder();
 }
 
 fn print_formatting() {
@@ -84,26 +81,4 @@ fn vector_explorer() {
     vec1.push(4);
     let vec2 = Vec::from([1, 2, 3, 4]);
     assert_eq!(vec1, vec2);
-}
-
-fn path_finder() {
-    // https://doc.rust-lang.org/stable/std/path/struct.Path.html
-    // https://doc.rust-lang.org/stable/std/path/struct.PathBuf.html
-    // https://doc.rust-lang.org/std/path/struct.Components.html
-
-    let path = Path::new("/tmp/foo/bar.txt");
-    for component in path.components() {
-        println!("{component:?}");
-    }
-
-    // https://stackoverflow.com/questions/37388107/how-to-convert-the-pathbuf-to-string
-    let path = Path::new("/foo/bar");
-    let parent = path.parent().unwrap();
-    assert_eq!(parent, Path::new("/foo"));
-    println!("{}", parent.display().to_string());
-
-    // https://stackoverflow.com/questions/73845791/how-to-remove-path-and-get-the-filename-in-rust
-    let path = Path::new("my_folder/file.txt");
-    let filename = path.file_name().unwrap();
-    println!("{}", filename.to_str().unwrap());
 }
