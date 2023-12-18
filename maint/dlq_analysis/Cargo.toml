@@ -1,0 +1,16 @@
+[package]
+name = "dlq_analysis"
+version = "0.1.0"
+edition = "2021"
+
+default-run = "dlq_analysis"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# multiple binaries
+# https://stackoverflow.com/questions/36604010/how-can-i-build-multiple-binaries-with-cargo
+# https://doc.rust-lang.org/cargo/reference/cargo-targets.html#binaries
+
+[dependencies]
+serde = { version = "1.0.192", features = ["derive"] }
+serde_json = "1.0.108"
