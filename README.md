@@ -4,7 +4,7 @@ Assorted Rust tutes
 
 ## Getting Started
 
-- CLion or IDEA with [Rust plugin](https://github.com/intellij-rust/intellij-rust#compatible-ides)
+- [RustRover](https://www.jetbrains.com/rust/) or others with [IntelliJ Rust plugin](https://github.com/intellij-rust/intellij-rust#compatible-ides)
 - Use [`rustup`](https://rustup.rs/) to install Rust
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
