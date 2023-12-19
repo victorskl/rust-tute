@@ -7,6 +7,9 @@ pub fn explorer() {
     var_referencing();
     print_break_line(32);
 
+    string_concat();
+    print_break_line(32);
+
     string_manipulation();
     print_break_line(32);
 
@@ -46,6 +49,31 @@ fn var_referencing() {
     // Hence, similarly, `&mut foo` for mutable reference.
 
     // Associated function means static method i.e. in a form of `String::new();`
+}
+
+fn string_concat() {
+    // https://stackoverflow.com/questions/30154541/how-do-i-concatenate-strings
+
+    // using macro
+    let ab = concat!("a", "b");
+    println!("{}", ab);
+
+    // using push_str() and + operator
+    let mut _a = "a".to_string();
+    let _b = "b".to_string();
+    let _c = "c".to_string();
+
+    _a.push_str(&_b);
+    println!("{}", _a);
+
+    println!("{}", _a + &_c);
+
+    // owner borrower
+    let mut owned_string: String = "hello ".to_owned();
+    let borrowed_string: &str = "world";
+
+    owned_string.push_str(borrowed_string);
+    println!("{owned_string}");
 }
 
 fn string_manipulation() {
